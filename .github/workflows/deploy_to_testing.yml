@@ -20,7 +20,7 @@ jobs:
           run: node --version
         - name: Install dependencies
           run: |
-            cd /home/ubuntu/practice_CICD/ReactNodeTesting
+            cd ReactNodeTesting
             npm install
   build_project:
     runs-on: ubuntu-latest
