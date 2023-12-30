@@ -51,12 +51,13 @@ jobs:
     steps:
         - name: Deploy and Install Dependencies
           if: always()
-          uses: appleboy/ssh-action@v1.0.0
+          id: action-ssh
+          uses: tiyee/action-ssh@release
           with:
-            host: 54.198.95.172
+            host: ${{ secrets.HOST }} 
+            port: 18.212.104.42
             username: ubuntu
-            key: ${{ secrets.SSH_PEM }}
-            port: 22
+            privateKey: ${{ secrets.SSH_PEM }} 
             script: |
               cd /home/ubuntu/practice_CICD/ReactNodeTesting
               npm install
