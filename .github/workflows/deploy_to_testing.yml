@@ -8,7 +8,7 @@ on:
 
 jobs:
   build_test_lint_code:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
@@ -35,7 +35,7 @@ jobs:
             cd ReactNodeTesting
             npx eslint src/sum.js src/cartview.js src/shippingOptions.js
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
         - name: Checkout Repository
           uses: actions/checkout@v4
