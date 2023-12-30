@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  setup_environment:
+  build_test_lint_code:
     runs-on: ubuntu-latest
     steps:
         - name: Checkout Repository
