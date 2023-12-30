@@ -52,7 +52,7 @@ jobs:
         - name: Deploy and Install Dependencies
           if: always()
           id: action-ssh
-          uses: tiyee/action-ssh@release
+          uses: tiyee/action-ssh@v1.0.1
           with:
             host: 18.212.104.42  
             port: 22 
