@@ -58,5 +58,5 @@ jobs:
             key: ${{ secrets.SSH_PEM }}
             port: 22
             script: |
-              cd /home/ubuntu/react/devops-assignment2/react-app
+              cd /home/ubuntu/practice_CICD/ReactNodeTesting
               npm install
