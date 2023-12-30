@@ -54,8 +54,8 @@ jobs:
           id: action-ssh
           uses: tiyee/action-ssh@release
           with:
-            host: ${{ secrets.HOST }} 
-            port: 18.212.104.42
+            host: 18.212.104.42  
+            port: 22 
             username: ubuntu
             privateKey: ${{ secrets.SSH_PEM }} 
             script: |
