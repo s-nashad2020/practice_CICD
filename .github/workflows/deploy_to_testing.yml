@@ -13,7 +13,7 @@ jobs:
         - name: Checkout Repository
           uses: actions/checkout@v4
   setup_environment:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
         - name: Setup Node.js
           uses: actions/setup-node@v3
@@ -26,21 +26,21 @@ jobs:
             cd ReactNodeTesting
             npm install
   build_project:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
         - name: Build Project
           run: |
             cd ReactNodeTesting
             npm run build-react
   unit_testing:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
         - name: Unit Testing
           run: |
             cd ReactNodeTesting
             npm run test-react
   lint_code:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
         - name: Lint Code
           run: |
